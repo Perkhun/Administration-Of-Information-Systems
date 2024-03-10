@@ -1,0 +1,7 @@
+---
+- hosts: servers
+  become: true
+  tasks:
+    - name: update hostname
+      ansible.builtin.hostname:
+        name: 'ira-perkhun-lab2'
